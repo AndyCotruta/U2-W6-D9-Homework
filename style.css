@@ -96,3 +96,12 @@ footer {
 .modal-content {
   color: black;
 }
+
+.delete-button {
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.song-row:hover .delete-button {
+  opacity: 1;
+}

@@ -243,7 +243,7 @@
                 <th scope="col">Duration</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="table-body">
               <tr class="song-row">
                 <th scope="row">1</th>
                 <td>Mark</td>
@@ -254,7 +254,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">2</th>
+                <th class="ordered-song-number" scope="row">2</th>
                 <td>Jacob</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -263,7 +263,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">3</th>
+                <th class="ordered-song-number" scope="row">3</th>
                 <td>Larry the Bird</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -272,7 +272,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">4</th>
+                <th class="ordered-song-number" scope="row">4</th>
                 <td>Mark</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -281,7 +281,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">5</th>
+                <th class="ordered-song-number" scope="row">5</th>
                 <td>Jacob</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -290,7 +290,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">6</th>
+                <th class="ordered-song-number" scope="row">6</th>
                 <td>Larry the Bird</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -299,7 +299,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">7</th>
+                <th class="ordered-song-number" scope="row">7</th>
                 <td>Mark</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -308,7 +308,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">8</th>
+                <th class="ordered-song-number" scope="row">8</th>
                 <td>Jacob</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -317,7 +317,7 @@
                 </td>
               </tr>
               <tr class="song-row">
-                <th scope="row">9</th>
+                <th class="ordered-song-number" scope="row">9</th>
                 <td>Larry the Bird</td>
                 <td>Artist</td>
                 <td>3:00</td>
@@ -382,12 +382,19 @@
                     <div class="modal-footer">
                       <button
                         type="button"
+                        id="close-modal"
                         class="btn btn-secondary"
                         data-dismiss="modal"
                       >
-                        Close it now
+                        Close
                       </button>
-                      <button type="button" class="btn btn-primary">Add</button>
+                      <button
+                        id="add-button"
+                        type="button"
+                        class="btn btn-primary"
+                      >
+                        Add
+                      </button>
                     </div>
                   </div>
                 </div>
