@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">Andy's Music</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#favorite"
+              >Favorites <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hall-of-shame">Hall of Shame</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#top-album">Top Album</a>
+              <a class="dropdown-item" href="#favorite-artist"
+                >Favorite Artist</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#tapet">Tapet</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-fadeIn d-flex py-4 more-info">
+      <h1 class="text-white mr-auto">Welcome to Andy's Music</h1>
+      <p class="text-right text-white align-self-center justify-self-end">
+        <span class="px-1">Listen.</span>
+        <span class="px-1">Enjoy.</span>
+        <span class="px-1">Relax.</span>
+      </p>
+    </div>
+    <div class="container favorite-albums-section">
+      <a id="favorite"></a>
+      <h2 class="mt-4">Favorite Albums</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="genre">
+              <p class="mb-0 p-1">Dance</p>
+            </div>
+            <div class="card-img-overlay fav-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container top-album-section">
+      <a id="top-album"></a>
+      <div class="card bg-dark text-white mt-5">
+        <img
+          src="https://i.pinimg.com/originals/c9/89/19/c98919abf17fd86146255f74d04ec113.jpg"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay top-album-section">
+          <h3 class="card-title">Album title</h3>
+          <p class="card-text">Band</p>
+          <p class="card-text">Genre</p>
+          <p class="card-text">59 mins</p>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="song-row">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">3</th>
+                <td>Larry the Bird</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">4</th>
+                <td>Mark</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">5</th>
+                <td>Jacob</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">6</th>
+                <td>Larry the Bird</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">7</th>
+                <td>Mark</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">8</th>
+                <td>Jacob</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr class="song-row">
+                <th scope="row">9</th>
+                <td>Larry the Bird</td>
+                <td>Artist</td>
+                <td>3:00</td>
+                <td>
+                  <button class="btn btn-danger delete-button">Delete</button>
+                </td>
+              </tr>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="add-button btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Add Track
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Please fill in
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-6">
+                          <label for="tracknumber">Track Number</label>
+                          <input id="tracknumber" type="number" />
+                        </div>
+                        <div class="col-6">
+                          <label for="tracktitle">Track Title</label>
+                          <input id="tracktitle" type="text" />
+                        </div>
+                        <div class="col-6">
+                          <label for="artistname">Artist Name</label>
+                          <input id="artistname" type="text" />
+                        </div>
+                        <div class="col-6">
+                          <label for="trackduration">Track Duration</label>
+                          <input id="trackduration" type="number" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close it now
+                      </button>
+                      <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container hall-of-shame-section">
+      <a id="hall-of-shame"></a>
+      <h2 class="mt-4">Worst Albums</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-xl-3 mt-2">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Album title</h5>
+              <p class="card-text">Genre</p>
+              <p class="card-text">59 mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 favorite-section">
+      <a id="favorite-artist"></a>
+      <h2>My favourite Artist</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <img
+            src="https://img.freepik.com/free-photo/music-notes-sheet_144627-25483.jpg?w=2000"
+            class="img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="fav col-sm-6 mt-4">
+          <p class="favourite">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+            corporis fugit, delectus aliquam quo repellat adipisci ab
+            voluptates. Eveniet eaque sit pariatur illum quam voluptates impedit
+            sint. Aut, vitae rem.
+          </p>
+          <p class="favourite">Lorem ipsum dolor sit amet.</p>
+          <p class="favourite">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium, facilis?
+          </p>
+          <p class="favourite">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+            vero excepturi iusto quidem aperiam nesciunt voluptatum, officia
+            commodi deleniti laudantium dolor sapiente odio enim aspernatur
+            obcaecati incidunt rerum quasi asperiores. Facere enim aut,
+            explicabo quod accusamus aliquam, assumenda atque animi, sint dicta
+            quia sapiente. Repellat possimus eveniet accusantium temporibus at!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 tapet-section">
+      <a id="tapet"></a>
+      <div class="row no-gutters">
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+        <div class="col-2">
+          <img src="https://picsum.photos/200" alt="" class="tapet-images" />
+        </div>
+      </div>
+    </div>
+    <div class="container footer-section">
+      <footer class="mt-4">
+        <p>Copyright thing here</p>
+        <p>Social links here</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

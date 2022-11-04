@@ -1,0 +1,98 @@
+.card-img {
+  opacity: 40%;
+}
+
+.table {
+  color: white;
+}
+
+.img-fluid {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.favourite {
+  font-size: clamp(0.75rem, 1.25vw, 1.5rem);
+}
+
+.fav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tapet-images {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron {
+  background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/article/career-advice/web_images/blogs/214/6084/How-music-and-sound-can-help-alleviate-career-anxiety_940x485.jpg");
+  object-fit: cover;
+  height: 60vh;
+  opacity: 0;
+  animation: fadeIn both 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.jumbotron p {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 280px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.fav-overlay {
+  width: 100%;
+  overflow: hidden;
+  transform: translateX(-150px);
+  transition: transform 500ms ease;
+}
+
+.card:hover > .fav-overlay {
+  transform: translateX(0);
+}
+
+.genre {
+  background-color: #dc3444;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-album-section {
+  height: 90vh;
+  overflow: auto;
+}
+
+.add-button {
+  box-shadow: none;
+  transition: all 200ms ease;
+}
+
+.add-button:hover {
+  box-shadow: 0px 2px 5px 1px #08182c;
+  transform: scale(1.05);
+}
+
+.modal-content {
+  color: black;
+}
