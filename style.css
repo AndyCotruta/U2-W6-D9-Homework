@@ -1,9 +1,187 @@
+.hidden {
+  visibility: hidden;
+}
+
+body {
+  background-image: linear-gradient(
+    25deg,
+    rgba(15, 57, 128, 1) 25%,
+    rgba(227, 2, 119, 1) 50%,
+    rgba(242, 128, 186, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.navbar {
+  background-image: linear-gradient(
+    0deg,
+    rgba(249, 190, 220, 0) 0%,
+    rgba(67, 49, 120, 0.8281906512605042) 50%,
+    rgba(9, 5, 88, 1) 100%
+  );
+}
+
+.navbar-logo {
+  height: 4rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  transition: transform 200ms ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+}
+
+.jumbotron {
+  background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/article/career-advice/web_images/blogs/214/6084/How-music-and-sound-can-help-alleviate-career-anxiety_940x485.jpg");
+  object-fit: cover;
+  height: 60vh;
+  opacity: 0;
+  animation: fadeIn both 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.jumbotron p {
+  font-weight: bold;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
 .card-img {
+  transition: opacity 0.5s ease;
+}
+
+.card:hover > .card-img {
   opacity: 40%;
+}
+
+.card {
+  overflow: hidden;
+  border: none;
+}
+
+.fav-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  transform: translateX(-300px);
+  transition: transform 500ms ease;
+}
+
+.card:hover > .fav-overlay {
+  transform: translateX(0);
+}
+
+.genre {
+  background-color: #0f387e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  color: white;
+}
+
+.top-album-section {
+  height: 90vh !important;
+  overflow: auto;
+}
+
+#top-album-img {
+  height: 80vh !important;
+  object-fit: cover;
+}
+
+.top-album-header {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .table {
   color: white;
+  overflow: hidden;
+}
+
+.table-head {
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table .table-body {
+  display: block;
+}
+
+.table-body {
+  height: 265px;
+  overflow: auto;
+}
+
+th,
+td {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.15rem;
+  padding: 0.5rem !important;
+}
+
+.song-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button {
+  box-shadow: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+  box-shadow: 0px 2px 5px 1px #08182c;
+  transform: scale(1.05);
+}
+
+.song-row:hover .delete-button {
+  opacity: 1;
+}
+
+.add-button {
+  box-shadow: none;
+  transition: all 200ms ease;
+  margin-inline: auto;
+}
+
+.add-button:hover {
+  box-shadow: 0px 2px 5px 1px #08182c;
+  transform: scale(1.05);
+}
+
+.modal-content {
+  color: black;
 }
 
 .img-fluid {
@@ -31,77 +209,4 @@ footer {
 .tapet-images {
   height: 100%;
   width: 100%;
-}
-
-.jumbotron {
-  background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/article/career-advice/web_images/blogs/214/6084/How-music-and-sound-can-help-alleviate-career-anxiety_940x485.jpg");
-  object-fit: cover;
-  height: 60vh;
-  opacity: 0;
-  animation: fadeIn both 2s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.jumbotron p {
-  font-weight: bold;
-  font-size: 2rem;
-  margin-right: 280px;
-}
-
-.card {
-  overflow: hidden;
-}
-
-.fav-overlay {
-  width: 100%;
-  overflow: hidden;
-  transform: translateX(-150px);
-  transition: transform 500ms ease;
-}
-
-.card:hover > .fav-overlay {
-  transform: translateX(0);
-}
-
-.genre {
-  background-color: #dc3444;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.top-album-section {
-  height: 90vh;
-  overflow: auto;
-}
-
-.add-button {
-  box-shadow: none;
-  transition: all 200ms ease;
-}
-
-.add-button:hover {
-  box-shadow: 0px 2px 5px 1px #08182c;
-  transform: scale(1.05);
-}
-
-.modal-content {
-  color: black;
-}
-
-.delete-button {
-  opacity: 0;
-  transition: all 0.8s;
-}
-
-.song-row:hover .delete-button {
-  opacity: 1;
 }
