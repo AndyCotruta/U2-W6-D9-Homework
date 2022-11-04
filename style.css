@@ -39,7 +39,7 @@ body {
   object-fit: cover;
   height: 60vh;
   opacity: 0;
-  animation: fadeIn both 2s;
+  animation: fadeIn both 3s 0.2s ease;
 }
 
 @keyframes fadeIn {
@@ -127,6 +127,7 @@ h2 {
   font-size: 1.15rem;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.75rem;
 }
 
 .table .table-body {
@@ -152,12 +153,14 @@ td {
 .song-row {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid #ffffff4a;
+  color: #ffffffc2;
 }
 
 .delete-button {
   box-shadow: none;
   opacity: 0;
-  transition: opacity 0.5s ease, transform 0.2s ease;
+  transition: all 500ms ease;
 }
 
 .delete-button:hover {
@@ -171,7 +174,7 @@ td {
 
 .add-button {
   box-shadow: none;
-  transition: all 200ms ease;
+  transition: all 500ms ease;
   margin-inline: auto;
 }
 
